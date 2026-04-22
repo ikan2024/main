@@ -92,9 +92,21 @@ body {
   padding: 13px 36px;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 2px;
+  border-radius: 25px;
 }
 .overlay-btn:hover { background: var(--color-text-main); color: white; }
+
+.btn-ig {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 11px 33px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
 
 /* ============================================================
    MUSIC PLAYER
@@ -965,6 +977,11 @@ audio { display: none; }
   <p class="overlay-eyebrow">You are invited to</p>
   <div class="overlay-script">Shafira &amp; Rangga</div>
   <button class="overlay-btn" onclick="openInvitation()">Buka Undangan ✦</button>
+  <div style="padding: 70px 90px 0;">
+    <div class="polaroid photo-right" style="height: 280px;width: auto;">
+      <img src="opening.gif" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+  </div>
 </div>
 
 <!-- MUSIC -->
@@ -1097,16 +1114,32 @@ audio { display: none; }
     " alt="">
 
     <div class="container">
-      <div class="reveal">
-        <div class="person-script">Shafira</div>
+      <div class="reveal" style="padding: 0 50px;">
+        <div class="polaroid photo-right">
+          <img src="fira.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
+        </div>
+        <div class="person-script" style="margin-top: 20px;">Shafira</div>
         <div class="person-full-name">Shafira Firdausi</div>
+        <div style="margin: 20px 0;">
+          <a href="https://www.instagram.com/shafira__f/" target="_blank" class="btn-ig">
+            @shafira_f
+          </a>
+        </div>
       </div>
       <div class="couple-amp-mid reveal reveal-delay-1">
         <span>&amp;</span>
       </div>
-      <div class="reveal">
-        <div class="person-script">Rangga</div>
+      <div class="reveal" style="padding: 0 50px;">
+        <div class="polaroid photo-right">
+          <img src="rangga.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
+        </div>
+        <div class="person-script" style="margin-top: 20px;">Rangga</div>
         <div class="person-full-name">Moch. Shaladin Rangga</div>
+        <div style="margin: 20px 0;">
+          <a href="https://www.instagram.com/shaladinrangga/" target="_blank" class="btn-ig">
+            @shaladinrangga
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1371,7 +1404,7 @@ audio { display: none; }
 
       <!-- QR Code placeholder -->
       <div style="margin-top: 40px;" class="reveal reveal-delay-3">
-        <img src="YOUR_QRCODE.png" style="width:140px; height:140px; display:block; margin:0 auto;"
+        <img src="QR.png" style="width:200px; height:200px; display:block; margin:0 auto;"
              onerror="this.outerHTML='<div class=\'qr-placeholder\'></div>'">
         <p style="font-size:11px; color:var(--color-text-light); margin-top:10px; letter-spacing:0.1em;">SCAN QR CODE</p>
       </div>
