@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 <link href="https://googleapis.com" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.svg">
 
 <style>
 /* ============================================================
@@ -37,8 +38,9 @@ body {
   color: var(--color-text-main);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  /* Paper texture via CSS */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .container {
@@ -157,6 +159,9 @@ audio { display: none; }
   background: var(--color-bg);
   position: relative;
   overflow: hidden;
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .hero-floral-row {
@@ -281,6 +286,9 @@ audio { display: none; }
   padding: 48px 28px;
   text-align: center;
   background: var(--color-bg);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .bismillah-img {
@@ -338,6 +346,9 @@ audio { display: none; }
   padding: 60px 0;
   text-align: center;
   background: var(--color-bg);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .couple-floral {
@@ -388,6 +399,15 @@ audio { display: none; }
   padding: 60px 28px;
   text-align: center;
   background: var(--color-bg);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
+}
+
+#photo-block {
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .event-floral {
@@ -490,6 +510,9 @@ audio { display: none; }
 #love-story {
   padding: 60px 0;
   background: var(--color-bg);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .love-story-title {
@@ -672,6 +695,9 @@ audio { display: none; }
   padding: 60px 28px;
   text-align: center;
   background: var(--color-bg);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .gift-section-title {
@@ -852,6 +878,9 @@ audio { display: none; }
   padding: 60px 28px;
   text-align: center;
   background: var(--color-bg);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 
 .closing-floral {
@@ -905,6 +934,9 @@ audio { display: none; }
   background: var(--color-bg);
   border-top: 0.5px solid var(--color-border);
   border-bottom: 0.5px solid var(--color-border);
+  background-image: url('tekstur_kertas.png');
+  /* background-repeat: repeat; */
+  background-size: auto;
 }
 /* Sembunyikan dengan: style="display:none" */
 .countdown-label {
@@ -976,7 +1008,7 @@ audio { display: none; }
 <div id="opening-overlay">
   <p class="overlay-eyebrow">You are invited to</p>
   <div class="overlay-script">Shafira &amp; Rangga</div>
-  <button class="overlay-btn" onclick="openInvitation()">Buka Undangan ✦</button>
+  <button class="overlay-btn" onclick="openInvitation()">✦ Buka Undangan ✦</button>
   <div style="padding: 70px 90px 0;">
     <div class="polaroid photo-right" style="height: 280px;width: auto;">
       <img src="opening.gif" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -987,7 +1019,7 @@ audio { display: none; }
 <!-- MUSIC -->
 <!-- Ganti YOUR_MUSIC_FILE.mp3 dengan file musikmu -->
 <audio id="bg-music" loop>
-  <source src="YOUR_MUSIC_FILE.mp3" type="audio/mpeg">
+  <source src="Hampir_Sempurna.mp3" type="audio/mpeg">
 </audio>
 <div id="music-player" onclick="toggleMusic()" title="Toggle Music" style="display:none;">
   <svg id="icon-play" viewBox="0 0 24 24"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
