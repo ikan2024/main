@@ -72,7 +72,7 @@ body {
 #opening-overlay {
   position: fixed;
   inset: 0;
-  background: #eef1f5;
+  background: #D2DBCC;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -670,6 +670,24 @@ audio { display: none; }
   font-size: 10px;
 }
 
+.married-main-photo-left {
+  background: white;
+  padding: 6px 6px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  transform: rotate(-2deg);
+}
+.married-main-photo-left img, .married-main-photo-left .photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  background: #e0e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aac;
+  font-size: 10px;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1049,7 +1067,7 @@ audio { display: none; }
   <button class="overlay-btn" onclick="openInvitation()">✦ Buka Undangan ✦</button>
   <div style="padding: 70px 90px 0;">
     <div class="polaroid photo-right" style="height: 280px;width: auto;">
-      <img src="opening.gif" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="opening_2.gif" style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 3/4;">
     </div>
   </div>
 </div>
@@ -1191,27 +1209,27 @@ audio { display: none; }
     <div class="container">
       <div class="reveal" style="padding: 0 50px;">
         <div class="polaroid photo-right">
-          <img src="fira.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
+          <img src="fira.jpg" alt="Quote Photo" style="aspect-ratio: 3/4;">
         </div>
         <div class="person-script" style="margin-top: 20px;">Shafira</div>
         <div class="person-full-name"><span class="name-emphasis">Shafira</span> Firdausi</div>
-        <p class="event-time" style="font-size: 14px;margin-top: 12px;">Putri Ketiga dari<br> Bapak M. Isa Ansyori <br> & Ibu Nur Jannah</p>
+        <p class="event-time" style="font-size: 14px;margin-top: 12px;">Putri Ketiga dari <br>  Bapak M. Isa Ansyori <br> & Ibu Nur Jannah</p>
         <div style="margin: 20px 0;">
           <a href="https://www.instagram.com/shafira__f/" target="_blank" class="btn-ig">
             @shafira_f
           </a>
         </div>
       </div>
-      <div class="couple-amp-mid reveal reveal-delay-1">
+      <div class="couple-amp-mid reveal reveal-delay-1" style="padding-top: 20px; padding-bottom: 20px;">
         <span>&amp;</span>
       </div>
       <div class="reveal" style="padding: 0 50px;">
         <div class="polaroid photo-right">
-          <img src="rangga.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
+          <img src="rangga.jpg" alt="Quote Photo" style="aspect-ratio: 3/4;">
         </div>
         <div class="person-script" style="margin-top: 20px;">Rangga</div>
         <div class="person-full-name">Moch. Shaladin <span class="name-emphasis">Rangga</span></div>  
-        <p class="event-time" style="font-size: 14px;margin-top: 12px;">Putra Pertama dari<br> Bapak Bendo Setyo <br> & Ibu Eny Ratna Ningsih</p>
+        <p class="event-time" style="font-size: 14px;margin-top: 12px;">Putra Pertama dari <br> Bapak Bendo Setyo <br> & Ibu Eny Ratna Ningsih</p>
         <div style="margin: 20px 0;">
           <a href="https://www.instagram.com/shaladinrangga/" target="_blank" class="btn-ig">
             @shaladinrangga
@@ -1277,6 +1295,118 @@ audio { display: none; }
     </div>
   </section>
 
+  <!-- ====== DRESSCODE ====== -->
+  <section id="dresscode" style="padding: 48px 28px 40px; text-align: center;">
+    <div class="container">
+ 
+      <h2 class="reveal" style="
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: 30px;
+        font-weight: 300;
+        color: var(--color-text-main);
+        margin-bottom: 8px;
+      ">Dresscode</h2>
+ 
+      <p class="reveal reveal-delay-1" style="
+        font-family: var(--font-body);
+        font-size: 13px;
+        color: var(--color-text-body);
+        line-height: 1.8;
+        margin-bottom: 28px;
+      ">Bukan dress code ketat kok, tapi kalau mau foto kita aesthetic bareng — ini warna-warna yang kami sarankan ya!</p>
+ 
+      <!-- Warna yang disarankan -->
+      <p class="reveal reveal-delay-1" style="
+        font-family: var(--font-body);
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-text-light);
+        margin-bottom: 16px;
+      ">Palet hari istimewa kami</p>
+ 
+      <div class="reveal reveal-delay-2" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 32px;">
+ 
+        <!-- Sage Green -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #8FA882; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"></div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-body); letter-spacing: 0.05em;">Sage Green</p>
+        </div>
+ 
+        <!-- Dusty Mauve -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #C4A99A; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"></div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-body); letter-spacing: 0.05em;">Dusty Mauve</p>
+        </div>
+ 
+        <!-- Cream -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #EDE4D3; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); border: 1px solid var(--color-border);"></div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-body); letter-spacing: 0.05em;">Cream</p>
+        </div>
+ 
+        <!-- Dusty Blue -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #8FAAB3; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"></div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-body); letter-spacing: 0.05em;">Dusty Blue</p>
+        </div>
+ 
+        <!-- Soft Olive -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #B5B89A; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"></div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-body); letter-spacing: 0.05em;">Soft Olive</p>
+        </div>
+ 
+      </div>
+ 
+      <!-- Warna yang dihindari -->
+      <p class="reveal reveal-delay-2" style="
+        font-family: var(--font-body);
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-text-light);
+        margin-bottom: 16px;
+      ">skip warna ini dulu ya!</p>
+ 
+      <div class="reveal reveal-delay-3" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+ 
+        <!-- Hitam -->
+        <div style="text-align: center; opacity: 0.65;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #1a1a1a; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+            </div>
+          </div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-light); letter-spacing: 0.05em;">Hitam</p>
+        </div>
+ 
+        <!-- Putih -->
+        <div style="text-align: center; opacity: 0.65;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #ffffff; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); border: 1px solid #ddd; position: relative;">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.25)" stroke-width="2"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+            </div>
+          </div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-light); letter-spacing: 0.05em;">Putih</p>
+        </div>
+ 
+        <!-- Merah -->
+        <div style="text-align: center; opacity: 0.65;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: #C0392B; margin: 0 auto 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); position: relative;">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+            </div>
+          </div>
+          <p style="font-family: var(--font-body); font-size: 10px; color: var(--color-text-light); letter-spacing: 0.05em;">Merah</p>
+        </div>
+ 
+      </div>
+ 
+    </div>
+  </section>
+
   <!-- Floral atas love story -->
   <div style="text-align:center; padding: 32px 28px 32px;">
     <img src="bouqet_4.svg" style="width:180px;" alt="" onerror="this.style.display='none'">
@@ -1315,7 +1445,7 @@ audio { display: none; }
           <p class="polaroid-caption">Foto Pertama<br>Buku Angkatan</p>
           <div class="polaroid photo-right">
             <!-- Ganti dengan foto pertama / buku angkatan -->
-            <img src="foto_pertama.png" alt="Foto Pertama">
+            <img src="foto_pertama.jpg" alt="Foto Pertama">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>Foto Pertama<br>Buku Angkatan</span>
@@ -1330,7 +1460,7 @@ audio { display: none; }
           <p class="polaroid-caption">Wisuda ke-128</p>
           <div class="polaroid photo-left">
             <!-- Ganti dengan foto wisuda -->
-            <img src="foto_wisuda_blurred.png" alt="Foto Wisuda">
+            <img src="foto_wisuda_blurred.jpg" alt="Foto Wisuda">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>Foto Wisuda</span>
@@ -1345,13 +1475,13 @@ audio { display: none; }
       <!-- Story Block 3: teks kiri, foto kanan -->
       <div class="story-block photo-right">
         <div class="story-text-col">
-          <p>Pertemuan kembali itu terasa hangat dan berkesan — seolah jarak dan waktu hanya menjadi jeda, bukan akhir.</p>
+          <p>Dari pertemuan kembali yang hangat, lahirlah hubungan yang lebih serius. Dua tahun bersama mengajarkan mereka tentang keselarasan nilai, prinsip, dan visi — sebuah keyakinan bahwa inilah jalan yang Allah SWT ridhai.</p>
         </div>
         <div class="story-photo-col">
           <p class="polaroid-caption">First date<br>in Jakarta</p>
           <div class="polaroid photo-right">
             <!-- Ganti dengan foto first date -->
-            <img src="first_date.png" alt="First Date">
+            <img src="first_date.jpg" alt="First Date">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>First Date<br>in Jakarta</span>
@@ -1363,13 +1493,7 @@ audio { display: none; }
       <!-- Teks panjang tanpa foto -->
       <div class="story-block photo-right" style="grid-template-columns:1fr; display:block; padding:0 24px;">
         <p style="font-size:13px; color:var(--color-text-body); line-height:1.9; text-align:justify;">
-          Dari sanalah hubungan yang lebih serius mulai tumbuh. Dua tahun bersama mengajarkan mereka tentang keselarasan nilai, prinsip, dan visi — sebuah keyakinan bahwa inilah jalan yang Allah SWT ridhai.
-        </p>
-        <div class="polaroid photo-right" style="height: 280px;width: auto; margin-top: 30px; margin-bottom: 30px;">
-          <img src="foto_tanatap.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        </div>
-        <p style="font-size:13px; color:var(--color-text-body); line-height:1.9; text-align:justify;">
-          Kini, dengan hati yang mantap dan penuh syukur, keduanya siap menyempurnakan separuh agama dan memulai babak baru kehidupan bersama. 
+          Kini, dengan hati yang mantap dan penuh syukur, keduanya siap menyempurnakan separuh agama dan memulai babak baru kehidupan bersama.
         </p>
       </div>
     </div>
@@ -1388,7 +1512,7 @@ audio { display: none; }
           <div class="married-title">We are<br>getting<br>married!</div>
           <div class="married-main-photo">
             <!-- Ganti dengan foto couple utama -->
-            <img src="foto_1.jpg" alt="Couple">
+            <img src="foto_2.jpg" alt="Couple">
             <!-- <div class="photo-placeholder" style="aspect-ratio:3/4; background:#e0e8f0; display:flex; align-items:center; justify-content:center; color:#aac; font-size:10px; flex-direction:column; gap:4px; padding:8px;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               Foto Couple
@@ -1396,41 +1520,47 @@ audio { display: none; }
           </div>
         </div>
 
+
+
         <!-- 6 foto grid polaroid -->
-        <div class="photo-grid">
+        <div class="photo-block">
           <!-- Ganti masing-masing src dengan foto kenangan -->
           <!-- Foto 1 -->
-          <div class="photo-grid-item">
-            <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_2.png" alt=""></div>
-          </div>
+          <!-- <div class="photo-grid-item">
+            <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_2.jpg" alt=""></div>
+          </div> -->
           <!-- Foto 2 -->
-          <div class="photo-grid-item">
+          <!-- <div class="photo-grid-item">
             <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_3.png" alt=""></div>
-          </div>
+          </div> -->
           <!-- Foto 3 -->
-          <div class="photo-grid-item">
+          <!-- <div class="photo-grid-item">
             <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_4.jpg" alt=""></div>
-          </div>
+          </div> -->
           <!-- Foto 4 -->
-          <div class="photo-grid-item">
+          <!-- <div class="photo-grid-item">
             <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_5.png" alt=""></div>
-          </div>
+          </div> -->
           <!-- Foto 5 -->
-          <div class="photo-grid-item">
+          <!-- <div class="photo-grid-item">
             <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_6.png" alt=""></div>
-          </div>
+          </div> -->
           <!-- Foto 6 -->
-          <div class="photo-grid-item">
+          <!-- <div class="photo-grid-item">
             <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_7.png" alt=""></div>
-          </div>
+          </div> -->
+        <div class="married-main-photo-left" style="aspect-ratio:4/3">
+          <img src="foto_tanatap.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
         </div>
       </div>
+
 
       <!-- Quote + foto terakhir -->
       <div class="quote-photo-block">
         <div class="polaroid photo-right">
           <!-- Ganti dengan foto couple quote -->
-          <img src="foto_8.jpg" alt="Quote Photo">
+          <img src="foto_rooftop.jpg" alt="Quote Photo">
           <!-- <div class="photo-placeholder">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
             <span>Foto<br>Couple</span>
