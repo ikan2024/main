@@ -5,29 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Wedding of Shafira & Rangga</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&family=Lora:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 <link href="https://googleapis.com" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Homemade+Apple&display=swap" rel="stylesheet">
 
 <style>
+
+@font-face {
+  font-family: 'Modelista Signature';
+  src: url('fonts/Modelistasignature-ownAV.otf') format('truetype');
+  /* atau kalau punya .woff2 (lebih ringan & direkomendasikan): */
+  src: url('fonts/Modelistasignature-ownAV.otf') format('woff2'),
+       url('fonts/Modelistasignature-ownAV.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+  
 /* ============================================================
    CONFIG — Edit warna, font, dan ukuran di sini
    ============================================================ */
 :root {
   --color-bg:           #f4f4f2;       /* Background utama (off-white/kertas) */
-  --color-text-main:    #5a7a9a;       /* Warna teks utama (dusty blue) */
-  --color-text-dark:    #3d5a70;       /* Teks lebih gelap */
-  --color-text-body:    #6a8aaa;       /* Teks paragraf */
-  --color-text-light:   #8aaabb;       /* Teks muted */
-  --color-border:       #c5d5e0;       /* Border/line */
+  --color-text-main:    #64725C;       /* Warna teks utama (dusty blue) */
+  --color-text-dark:    #64725C;       /* Teks lebih gelap */
+  --color-text-body:    #91a187;       /* Teks paragraf */
+  --color-text-light:   #B3C4A9;       /* Teks muted */
+  --color-border:       #D2DBCC;       /* Border/line */
   --color-white:        #ffffff;
 
-  --font-script:        'Great Vibes', cursive;           /* Font nama besar */
-  --font-serif:         'Cormorant Garamond', serif;      /* Font judul & aksen */
+  --font-script:        'Modelista Signature', cursive;           /* Font nama besar */
+  --font-serif:         'Lora', serif;      /* Font judul & aksen */
   --font-body:          'DM Sans', sans-serif;               /* Font body */
+  --font-handwriting:   'Homemade Apple';           /* Font nama besar */
 
   --max-width:          420px;
 }
+
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -70,7 +87,7 @@ body {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 16px;
-  color: var(--color-text-light);
+  color: var(--color-text-body);
   letter-spacing: 0.1em;
   margin-bottom: 16px;
 }
@@ -175,7 +192,16 @@ audio { display: none; }
   height: auto;
 }
 
-.hero-eyebrow {
+.hero-eyebrow-regular {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: var(--color-text-main);
+  margin: 8px 0 0;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.3s forwards;
+}
+
+.hero-eyebrow-italic {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 22px;
@@ -192,6 +218,8 @@ audio { display: none; }
   line-height: 0.95;
   opacity: 0;
   animation: fadeUp 1s ease 0.5s forwards;
+  text-align: left;
+  margin-left: 8%;   
 }
 
 .hero-amp {
@@ -203,6 +231,8 @@ audio { display: none; }
   margin: -8px 0;
   opacity: 0;
   animation: fadeUp 1s ease 0.7s forwards;
+  display: block;
+  text-align: center;
 }
 
 .hero-groom-name {
@@ -212,6 +242,8 @@ audio { display: none; }
   line-height: 0.95;
   opacity: 0;
   animation: fadeUp 1s ease 0.9s forwards;
+  text-align: right;
+  margin-right: 4%;  
 }
 
 .hero-line-ornament {
@@ -234,9 +266,9 @@ audio { display: none; }
 
 .hero-date {
   font-family: var(--font-body);
-  font-size: 13px;
-  letter-spacing: 0.3em;
-  color: var(--color-text-light);
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-body);
   margin: 16px 0 28px;
   opacity: 0;
   animation: fadeUp 1s ease 1.1s forwards;
@@ -307,8 +339,8 @@ audio { display: none; }
 }
 
 .ayat-translation {
-  font-family: 'Plus Jakarta Sans';
-  font-style: regular;
+  font-family: 'DM Sans';
+  font-style: italic;
   font-size: 14px;
   color: var(--color-text-body);
   line-height: 1.2;
@@ -316,6 +348,8 @@ audio { display: none; }
 }
 
 .ayat-source {
+  font-family: 'DM Sans';
+  font-style: italic;
   font-size: 12px;
   color: var(--color-text-light);
   letter-spacing: 0.1em;
@@ -364,13 +398,18 @@ audio { display: none; }
   margin-bottom: 6px;
 }
 
+
 .person-full-name {
-  font-family: var(--font-script);
-  font-size: 22px;
-  color: var(--color-text-light);
-  margin-bottom: 0;
+  font-family: var(--font-serif);
+  font-weight: 300;
+  color: var(--color-text-main);
+  font-size: 24px;
 }
 
+.name-emphasis {
+  font-weight: 700;          /* bold */
+  color: var(--color-text-dark);  /* warna lebih gelap */
+}
 .couple-amp-mid {
   display: flex;
   align-items: center;
@@ -433,7 +472,6 @@ audio { display: none; }
   padding: 0 16px;
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: bold;
   font-size: 30px;
   color: var(--color-text-main);
   white-space: nowrap;
@@ -441,27 +479,25 @@ audio { display: none; }
 
 .event-day-name {
   font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 20px;
   letter-spacing: 0.15em;
-  color: var(--color-text-light);
-  text-transform: uppercase;
+  color: var(--color-text-dark);
   margin-bottom: 4px;
 }
 
 .event-date-big {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.15em;
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   margin-bottom: 16px;
 }
 
 .event-time {
   font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--color-text-body);
+  font-size: 16px;
+  color: var(--color-text-dark);
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
@@ -545,6 +581,7 @@ audio { display: none; }
 .story-block.photo-left .story-photo-col { order: 1; }
 
 .story-text-col p {
+  font-family: var(--font-body);
   font-size: 12.5px;
   color: var(--color-text-body);
   line-height: 1.85;
@@ -582,8 +619,8 @@ audio { display: none; }
 }
 
 .polaroid-caption {
-  font-family: var(--font-script);
-  font-size: 14px;
+  font-family: var(--font-handwriting);
+  font-size: 16px;
   color: var(--color-text-body);
   text-align: center;
   margin: 9px 0;
@@ -608,10 +645,11 @@ audio { display: none; }
 }
 
 .married-title {
-  font-family: var(--font-script);
-  font-size: 40px;
+  font-family: var(--font-handwriting);
+  font-size: 28px;
+  margin-left: 20px;
   color: var(--color-text-main);
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 .married-main-photo {
@@ -1040,12 +1078,17 @@ audio { display: none; }
            onerror="this.outerHTML='<svg class=\'hero-floral-img svg-floral-placeholder\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'><circle cx=\'70\' cy=\'30\' r=\'20\' fill=\'#90c47a\' opacity=\'.7\'/><circle cx=\'45\' cy=\'20\' r=\'15\' fill=\'#f8b4c8\' opacity=\'.6\'/><circle cx=\'30\' cy=\'50\' r=\'12\' fill=\'#b4c8f8\' opacity=\'.6\'/></svg>'">
     </div>
 
-    <p class="hero-eyebrow">The Wedding of</p>
+    <p class="hero-eyebrow-regular">The Wedding of</p>
 
-    <div style="padding: 0 20px; margin-top: 12px;">
-      <div class="hero-bride-name">Shafira</div>
-      <span class="hero-amp">&amp;</span>
-      <div class="hero-groom-name">Rangga</div>
+    <div style="
+      max-width: var(--max-width); /* 420px dari config kamu */
+      margin: 0 auto;              /* center horizontal */
+      padding: 0 20px;
+      margin-top: 12px;
+    ">
+      <div class="hero-bride-name" style="text-align: left; margin-left: 8%;">Shafira</div>
+      <span class="hero-amp" style="display: block; text-align: right; margin-right: 28%;"">&#38;</span>
+      <div class="hero-groom-name" style="text-align: right; margin-right: 8%;">Rangga</div>
     </div>
 
     <div class="hero-line-ornament"><span>✦</span></div>
@@ -1092,12 +1135,12 @@ audio { display: none; }
     <div class="container">
       <!-- Monogram SR -->
       <div class="hero-monogram-wrap">
-        <img src="monogram.svg" style="width:100px;" alt="S&R"
+        <img src="monogram-green.svg" style="width:100px;" alt="S&R"
             onerror="this.outerHTML='<svg class=\'monogram-svg\' viewBox=\'0 0 120 120\' xmlns=\'http://www.w3.org/2000/svg\'><text x=\'50%\' y=\'58%\' text-anchor=\'middle\' dominant-baseline=\'middle\' font-family=\'Cormorant Garamond,serif\' font-style=\'italic\' font-size=\'56\' fill=\'#5a7a9a\'>SR</text><circle cx=\'60\' cy=\'60\' r=\'55\' fill=\'none\' stroke=\'#c5d5e0\' stroke-width=\'0.8\'/></svg>'">
       </div>
 
       <!-- Ganti dengan gambar bismillah kaligrafi -->
-      <img src="bismillah.svg" class="bismillah-img" alt="Bismillah"
+      <img src="bismillah-green.svg" class="bismillah-img" alt="Bismillah"
            onerror="this.style.display='none'" style="width: 240px;">
 
       <div style="margin: 60px 0 100px 0;">
@@ -1151,7 +1194,8 @@ audio { display: none; }
           <img src="fira.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
         </div>
         <div class="person-script" style="margin-top: 20px;">Shafira</div>
-        <div class="person-full-name">Shafira Firdausi</div>
+        <div class="person-full-name"><span class="name-emphasis">Shafira</span> Firdausi</div>
+        <p class="event-time" style="font-size: 14px;margin-top: 12px;">Putri Ketiga dari<br> Bapak M. Isa Ansyori <br> & Ibu Nur Jannah</p>
         <div style="margin: 20px 0;">
           <a href="https://www.instagram.com/shafira__f/" target="_blank" class="btn-ig">
             @shafira_f
@@ -1166,7 +1210,8 @@ audio { display: none; }
           <img src="rangga.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
         </div>
         <div class="person-script" style="margin-top: 20px;">Rangga</div>
-        <div class="person-full-name">Moch. Shaladin Rangga</div>
+        <div class="person-full-name">Moch. Shaladin <span class="name-emphasis">Rangga</span></div>  
+        <p class="event-time" style="font-size: 14px;margin-top: 12px;">Putra Pertama dari<br> Bapak Bendo Setyo <br> & Ibu Eny Ratna Ningsih</p>
         <div style="margin: 20px 0;">
           <a href="https://www.instagram.com/shaladinrangga/" target="_blank" class="btn-ig">
             @shaladinrangga
@@ -1259,12 +1304,12 @@ audio { display: none; }
       opacity: 0.25;
     " alt="">
 
-    <div class="container" style="padding:0;">
+    <div class="container" style="padding:0; font-style: var(--font-body);">
       <h2 class="love-story-title reveal">Love Story</h2>
       <!-- Story Block 1: teks kiri, foto kanan -->
       <div class="story-block photo-right">
         <div class="story-text-col">
-          <p>Rangga dan Fira pertama kali dipertemukan di bangku perkuliahan, sebagai teman sekelas dan rekan dalam organisasi himpunan yang sama. Selama masa kuliah, keduanya menjalin pertemanan yang baik dan perlahan merasakan ketertarikan satu sama lain, meski saat itu belum ada yang mengambil langkah lebih jauh.</p>
+          <p>Rangga dan Shafira pertama kali dipertemukan di bangku perkuliahan, sebagai teman sekelas dan rekan dalam organisasi himpunan yang sama. Selama masa kuliah, keduanya menjalin pertemanan yang baik dan perlahan merasakan ketertarikan satu sama lain, meski saat itu belum ada yang mengambil langkah lebih jauh.</p>
         </div>
         <div class="story-photo-col">
           <p class="polaroid-caption">Foto Pertama<br>Buku Angkatan</p>
@@ -1282,10 +1327,10 @@ audio { display: none; }
       <!-- Story Block 2: foto kiri, teks kanan -->
       <div class="story-block photo-left">
         <div class="story-photo-col">
-          <p class="polaroid-caption">Foto Wisuda</p>
+          <p class="polaroid-caption">Wisuda ke-128</p>
           <div class="polaroid photo-left">
             <!-- Ganti dengan foto wisuda -->
-            <img src="foto_wisuda.png" alt="Foto Wisuda">
+            <img src="foto_wisuda_blurred.png" alt="Foto Wisuda">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>Foto Wisuda</span>
@@ -1318,8 +1363,12 @@ audio { display: none; }
       <!-- Teks panjang tanpa foto -->
       <div class="story-block photo-right" style="grid-template-columns:1fr; display:block; padding:0 24px;">
         <p style="font-size:13px; color:var(--color-text-body); line-height:1.9; text-align:justify;">
-          Selama dua tahun menjalin hubungan, Rangga dan Fira telah membangun keterbukaan yang mendalam mengenai nilai-nilai kehidupan, prinsip, serta visi ke depan yang mereka sepakati bersama. Kehadiran satu sama lain membawa ketenangan dan keyakinan bahwa inilah jalan yang Allah SWT ridhai untuk mereka tempuh bersama.
-          <br><br>
+          Kini, dengan penuh rasa syukur dan kemantapan hati, keduanya siap melangkah menuju jenjang pernikahan — menyempurnakan separuh agama dan memulai babak baru kehidupan bersama.
+        </p>
+        <div class="polaroid photo-right" style="height: 280px;width: auto; margin-top: 30px; margin-bottom: 30px;">
+          <img src="foto_tanatap.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <p style="font-size:13px; color:var(--color-text-body); line-height:1.9; text-align:justify;">
           Kini, dengan penuh rasa syukur dan kemantapan hati, keduanya siap melangkah menuju jenjang pernikahan — menyempurnakan separuh agama dan memulai babak baru kehidupan bersama.
         </p>
       </div>
@@ -1327,7 +1376,7 @@ audio { display: none; }
   </section>
 
   <!-- Floral center -->
-  <div style="text-align:center; padding: 32px 28px;">
+  <div style="text-align:center; padding: 28px 28px;">
     <img src="bouqet_5.svg" style="width:180px;" alt="" onerror="this.style.display='none'">
   </div>
 
@@ -1360,7 +1409,7 @@ audio { display: none; }
           </div>
           <!-- Foto 3 -->
           <div class="photo-grid-item">
-            <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_4.png" alt=""></div>
+            <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_4.jpg" alt=""></div>
           </div>
           <!-- Foto 4 -->
           <div class="photo-grid-item">
@@ -1438,7 +1487,8 @@ audio { display: none; }
       <div style="margin-top: 40px;" class="reveal reveal-delay-3">
         <img src="QR.png" style="width:200px; height:200px; display:block; margin:0 auto;"
              onerror="this.outerHTML='<div class=\'qr-placeholder\'></div>'">
-        <p style="font-size:11px; color:var(--color-text-light); margin-top:10px; letter-spacing:0.1em;">SCAN QR CODE</p>
+             <img src="iconQris.png" alt="Description" class="centered-image" style="width: 180px;">
+        <p style="font-size:11px; color:var(--color-text-light); margin-top:10px; letter-spacing:0.1em;">SCAN QRIS</p>
       </div>
     </div>
   </section>
