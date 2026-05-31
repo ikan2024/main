@@ -127,6 +127,17 @@ body {
   border-radius: 25px;
 }
 
+.overlay-bottom {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-body);
+  margin: 0 auto;
+  padding: 20px 30px;
+  text-align: justify; 
+  text-align-last: center;
+}
+
 /* ============================================================
    MUSIC PLAYER
    ============================================================ */
@@ -1065,11 +1076,12 @@ audio { display: none; }
   <p class="overlay-eyebrow">You are invited to</p>
   <div class="overlay-script">Shafira &amp; Rangga</div>
   <button class="overlay-btn" onclick="openInvitation()">✦ Buka Undangan ✦</button>
-  <div style="padding: 70px 90px 0;">
+  <div style="padding: 70px 90px 20px;">
     <div class="polaroid photo-right" style="height: 280px;width: auto;">
-      <img src="opening_2.gif" style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 3/4;">
+      <img src="opening.gif" style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 3/4;">
     </div>
   </div>
+  <p class="overlay-bottom">Mohon untuk tidak menyebarluaskan undangan ini tanpa sepengetahuan dan izin calon pengantin</p>
 </div>
 
 <!-- MUSIC -->
@@ -1209,7 +1221,7 @@ audio { display: none; }
     <div class="container">
       <div class="reveal" style="padding: 0 50px;">
         <div class="polaroid photo-right">
-          <img src="fira.JPG" alt="Quote Photo" style="aspect-ratio: 3/4;">
+          <img src="fira.jpeg" alt="Quote Photo" style="aspect-ratio: 3/4;">
         </div>
         <div class="person-script" style="margin-top: 20px;">Shafira</div>
         <div class="person-full-name"><span class="name-emphasis">Shafira</span> Firdausi</div>
@@ -1225,7 +1237,7 @@ audio { display: none; }
       </div>
       <div class="reveal" style="padding: 0 50px;">
         <div class="polaroid photo-right">
-          <img src="rangga.JPG" alt="Quote Photo" style="aspect-ratio: 3/4;">
+          <img src="rangga_3.jpg" alt="Quote Photo" style="aspect-ratio: 3/4;">
         </div>
         <div class="person-script" style="margin-top: 20px;">Rangga</div>
         <div class="person-full-name">Moch. Shaladin <span class="name-emphasis">Rangga</span></div>  
@@ -1445,7 +1457,7 @@ audio { display: none; }
           <p class="polaroid-caption">Foto Pertama<br>Buku Angkatan</p>
           <div class="polaroid photo-right">
             <!-- Ganti dengan foto pertama / buku angkatan -->
-            <img src="foto_pertama.JPG" alt="Foto Pertama">
+            <img src="foto_pertama.png" alt="Foto Pertama">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>Foto Pertama<br>Buku Angkatan</span>
@@ -1460,7 +1472,7 @@ audio { display: none; }
           <p class="polaroid-caption">Wisuda ke-128</p>
           <div class="polaroid photo-left">
             <!-- Ganti dengan foto wisuda -->
-            <img src="foto_wisuda_blurred.JPG" alt="Foto Wisuda">
+            <img src="foto_wisuda_blurred.png" alt="Foto Wisuda">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>Foto Wisuda</span>
@@ -1481,7 +1493,7 @@ audio { display: none; }
           <p class="polaroid-caption">First date<br>in Jakarta</p>
           <div class="polaroid photo-right">
             <!-- Ganti dengan foto first date -->
-            <img src="first_date.JPG" alt="First Date">
+            <img src="first_date.png" alt="First Date">
             <!-- <div class="photo-placeholder">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               <span>First Date<br>in Jakarta</span>
@@ -1512,7 +1524,7 @@ audio { display: none; }
           <div class="married-title">We are<br>getting<br>married!</div>
           <div class="married-main-photo">
             <!-- Ganti dengan foto couple utama -->
-            <img src="foto_2.JPG" alt="Couple">
+            <img src="foto_2_1.jpg" alt="Couple">
             <!-- <div class="photo-placeholder" style="aspect-ratio:3/4; background:#e0e8f0; display:flex; align-items:center; justify-content:center; color:#aac; font-size:10px; flex-direction:column; gap:4px; padding:8px;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
               Foto Couple
@@ -1550,7 +1562,7 @@ audio { display: none; }
             <div class="photo-placeholder-sm" style="aspect-ratio:3/4;background:#e0e8f0;"><img src="foto_7.png" alt=""></div>
           </div> -->
         <div class="married-main-photo-left" style="aspect-ratio:4/3">
-          <img src="foto_tanatap.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="foto_tanatap_1.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
         </div>
       </div>
@@ -1560,7 +1572,7 @@ audio { display: none; }
       <div class="quote-photo-block">
         <div class="polaroid photo-right">
           <!-- Ganti dengan foto couple quote -->
-          <img src="foto_rooftop.jpg" alt="Quote Photo">
+          <img src="foto_rooftop_1.jpg" alt="Quote Photo">
           <!-- <div class="photo-placeholder">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
             <span>Foto<br>Couple</span>
